@@ -6,19 +6,19 @@ import java.util.stream.Stream;
 
 public class StreamAPI2 {
     public static void main(String[] args) {
-        // Creating empty stream of object 
-        Stream<Object> emptyStream=Stream.empty();
+        // Creating empty stream of object
+        Stream<Object> emptyStream = Stream.empty();
 
-        String name[]={"Ashutosh","Pritam","Ranjan","Ranjeet"};
+        String name[] = { "Ashutosh", "Pritam", "Ranjan", "Ranjeet" };
 
-        Stream<String> nameStream=Stream.of(name);
-        nameStream.forEach(e->{
+        Stream<String> nameStream = Stream.of(name);
+        nameStream.forEach(e -> {
             System.out.println(e);
         });
 
-        Stream<Object> streamBuilder= Stream.builder().build();
+        Stream<Object> streamBuilder = Stream.builder().build();
 
-        List<String> list= new ArrayList<>();
+        List<String> list = new ArrayList<>();
         list.add("Ashutosh");
         list.add("Amit");
         list.add("Ranjan");
@@ -26,9 +26,9 @@ public class StreamAPI2 {
         list.add("Sachin");
 
         System.out.println("Name stream list");
-        Stream<String> nStream=list.stream();
+        Stream<String> nStream = list.stream();
 
-        nStream.forEach(e->{
+        nStream.forEach(e -> {
             System.out.println(e);
         });
 

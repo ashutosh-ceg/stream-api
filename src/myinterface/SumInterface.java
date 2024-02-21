@@ -1,5 +1,5 @@
 package myinterface;
 
 public interface SumInterface {
-    public int sum(int a,int b);
+    public int sum(int a, int b);
 }
